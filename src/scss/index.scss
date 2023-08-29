@@ -1,0 +1,205 @@
+@import 'variables';
+@import 'animations';
+@import 'fonts';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/grid';
+@import 'bootstrap/scss/images';
+@import 'bootstrap/scss/utilities';
+
+body {
+  font-family: $font-base;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+p,
+a {
+  font-weight: 400;
+}
+
+.text-thin {
+  font-weight: 300;
+}
+
+.text-bold {
+  font-weight: 900;
+}
+
+.nav {
+  $nav-height: 72px;
+
+  height: $nav-height;
+  position: relative;
+  transition: background-color .4s ease-in-out;
+
+  span {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+  }
+
+  .contact,
+  .title {
+    @include media-breakpoint-down('md') {
+      transition: transform .4s ease-in-out;
+      width: 100%;
+    }
+  }
+
+  .contact {
+    @include media-breakpoint-down('md') {
+      height: $nav-height;
+      justify-content: space-around;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform: translateY(-$nav-height);
+    }
+  }
+
+  &.scrolled {
+    background-color: $gray-900;
+
+    .contact {
+      @include media-breakpoint-down('md') {
+        transform: translateY(0);
+      }
+    }
+
+    .title {
+      @include media-breakpoint-down('md') {
+        transform: translateY($nav-height);
+      }
+    }
+  }
+}
+
+
+.header {
+  height: 100vh;
+
+  h1 {
+    font-size: 3.2rem;
+
+    @include media-breakpoint-up('lg') {
+      font-size: 4rem;
+    }
+
+    span {
+      display: block;
+
+      @include media-breakpoint-up('md') {
+        display: inline;
+      }
+    }
+  }
+
+  .lead {
+    font-size: 1.1rem;
+
+    @include media-breakpoint-up('lg') {
+      font-size: 2rem;
+    }
+  }
+
+  .row-hero {
+
+    .img-hero {
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+    }
+
+    &::after {
+      @include box-shadow($box-shadow);
+
+      background-color: $black;
+      content: '';
+      display: block;
+      height: 100vh;
+      left: 0;
+      opacity: .3;
+      position: absolute;
+      top: 0;
+      width: 100vw;
+    }
+  }
+
+  .row-arrow {
+    animation: float 4s ease-in-out infinite;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    .btn {
+      border-radius: 50%;
+    }
+  }
+}
+
+.contact {
+  $line-size: 4rem;
+  $line-distance: 1rem;
+
+  bottom: $line-size + 2 * $line-distance;
+  z-index: $zindex-fixed;
+
+  .contact-button:hover {
+    opacity: 1;
+  }
+}
+
+.icon-button {
+  $block-size: 40px;
+  $color: $white;
+  opacity: .8;
+  transition: opacity .4s ease-in-out;
+
+  .icon {
+    height: $block-size;
+    padding: .5rem;
+    width: $block-size;
+  }
+
+  svg {
+    fill: $color;
+  }
+
+  .text {
+    color: $color;
+    font-size: 1.1rem;
+  }
+}
+
+.footer {
+  background-color: $gray-900;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.file-download {
+  .icon {
+    width: 5rem;
+
+    path {
+      fill: $primary;
+    }
+  }
+}

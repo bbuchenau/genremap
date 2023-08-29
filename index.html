@@ -1,0 +1,287 @@
+<!doctype html>
+<html
+  class="scroll-reveal-enabled"
+  lang="de-DE"
+>
+<head>
+  <meta charset="utf-8">
+  <meta
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    name="viewport"
+  >
+
+  <meta
+    content="#ffffff"
+    name="msapplication-TileColor"
+  >
+  <meta
+    content="/favicon/ms-icon-144x144.png"
+    name="msapplication-TileImage"
+  >
+  <meta
+    content="#ffffff"
+    name="theme-color"
+  >
+
+  <meta
+    content="Diese Seite dient als Rahmen meiner Bachelorarbeit „Geographische Muster in der Musiklandschaft Deutschlands – eine GIS-basierte Analyse am Beispiel der Streamingplattform Spotify“. Ziel der Arbeit ist es, den Musikkonsum in Deutschland anhand von 166 deutschen Städten und Informationen zu mehr als 17.000 Songs zu betrachten und in einem räumlichen sowie stadtgeographischen Kontext zu bewerten."
+    name="description"
+  >
+
+  <meta
+    content="Ben Buchenau"
+    name="author"
+  >
+
+  <title>Genremap — Geographische Muster in der Musiklandschaft Deutschlands</title>
+</head>
+<body>
+<nav class="nav container-fluid position-fixed fixed-top text-white overflow-hidden">
+  <div class="row">
+    <div class="col-12 d-flex flex-row flex-wrap py-3 px-3">
+      <span class="title text-bold">BACHELORARBEIT</span>
+      <div class="contact d-flex flex-row align-items-center ml-auto">
+        <a
+          class="phone icon-button d-flex flex-row align-items-center mr-3"
+          href="https://qgiscloud.com/bbuchenau/German_Music_Landscape/"
+          rel="noopener"
+          target="_blank"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+              fill="#fff"
+            />
+          </svg>
+          <span class="text ml-2 d-flex">ZUR KARTE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<header
+  class="header container-fluid position-relative text-white"
+  id="banner"
+>
+  <div class="row row-hero position-absolute overflow-hidden h-100 w-100">
+    <img
+      alt="Landkarte und Kopfhörer"
+      class="img-hero img-fluid"
+      src="/images/map-and-music.jpg"
+    >
+  </div>
+  <div class="container h-100">
+    <div class="row row-title justify-content-center align-items-end h-100">
+      <div class="col-12 text-right py-5 my-5 pl-5 pl-lg-0">
+        <h1>
+          <span>Geo&shy;graphische</span> <span>Muster in der</span> <span>Musikland&shy;schaft Deutsch&shy;lands</span>
+        </h1>
+        <p class="lead">Eine GIS-basierte Analyse am Beispiel der Streamingplattform Spotify</p>
+      </div>
+    </div>
+  </div>
+  <div class="row row-arrow position-absolute justify-content-center">
+    <button
+      aria-label="Weiter zum Abschnitt 'Über das Projekt'"
+      class="btn btn-link btn-nav arrow-down p-4"
+      data-target="intro"
+      name="Weiter zum Abschnitt 'Über das Projekt'"
+      type="button"
+    >
+      <svg
+        clip-rule="evenodd"
+        fill-rule="evenodd"
+        height="24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"
+          fill="#fff"
+        ></path>
+      </svg>
+      <span class="sr-only">Weiter zum Abschnitt 'Über das Projekt'</span>
+    </button>
+  </div>
+</header>
+<div
+  class="container my-5"
+  id="intro"
+>
+  <div class="row pt-5">
+    <div class="col-12">
+      <h2>ÜBER DAS PROJEKT</h2>
+      <p>
+        Diese Seite dient als Rahmen meiner Bachelorarbeit „Geographische Muster in der Musiklandschaft
+        Deutschlands – eine GIS-basierte Analyse am Beispiel der Streamingplattform Spotify“. Ziel der Arbeit
+        ist es, den Musikkonsum in Deutschland anhand von 166 deutschen Städten und Informationen zu
+        mehr als 17.000 Songs zu betrachten und in einem räumlichen sowie stadtgeographischen Kontext zu
+        bewerten. Dabei wurden insbesondere die gehörten Genres sowie relevante Songparameter
+        analysiert. Zur Veranschaulichung der Musikdaten wurde über QGIS Cloud ein WebGIS erstellt.
+      </p>
+    </div>
+  </div>
+  <div class="row pt-5 align-items-center justify-content-center">
+    <a
+      class="btn btn-primary icon-button d-flex flex-row align-items-center mr-3"
+      href="https://qgiscloud.com/bbuchenau/German_Music_Landscape/"
+      rel="noopener"
+      target="_blank"
+    >
+      <svg
+        class="icon"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+          fill="#ffffff"
+        />
+      </svg>
+      <span class="text ml-2 d-flex">ZUR KARTE</span>
+    </a>
+  </div>
+</div>
+<div
+  class="container my-5"
+  id="data"
+>
+  <div class="row pt-5">
+    <div class="col-12">
+      <h2>DATENGRUNDLAGE</h2>
+      <p>
+        Die Daten wurden von Juni bis August 2019 über die Webseite
+        <a
+          class="d-inline-flex"
+          href="https://everynoise.com/"
+          rel="noopener"
+          target="_blank"
+        >EveryNoise
+        </a>
+        erhoben, die von dem Spotify-Datenwissenschaftler Glenn McDonald herausgegeben wird. Der Datensatz mit
+        dem Geoinformationssystem QGIS weiter bearbeitet und analysiert. Die folgenden zwei Excel-Dateien liegen
+        der Analyse zugrunde. Daneben wurden für die Bachelorarbeit zum Vergleich raumbezogene Fachdaten des
+        BBSR bezogen.
+      </p>
+    </div>
+  </div>
+  <div class="row pt-5">
+    <div class="col-6">
+      <a
+        class="d-flex flex-column align-items-center justify-content-center file-download"
+        href="/download/Datengrundlage-Genres.xlsx"
+      >
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
+        </svg>
+        <button
+          class="btn btn-primary"
+          type="button"
+        >
+          Genres XLSX Herunterladen
+        </button>
+      </a>
+    </div>
+    <div class="col-6">
+      <a
+        class="d-flex flex-column align-items-center justify-content-center file-download"
+        href="/download/Datengrundlage-Songparameter.xlsx"
+      >
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
+        </svg>
+        <button
+          class="btn btn-primary"
+          type="button"
+        >
+          Songparameter XLSX Herunterladen
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+<div
+  class="container my-5"
+  id="thesis"
+>
+  <div class="row pt-5">
+    <div class="col-12">
+      <h2>BACHELORARBEIT</h2>
+      <p>
+        Die Arbeit wurde zur Erlangung des akademischen Grades Bachelor of Science am geographischen
+        Institut der Universität zu Köln angefertigt. Folgende Datei zeigt das Endergebnis.
+      </p>
+    </div>
+  </div>
+  <div class="row pt-5">
+    <div class="col-12">
+      <a
+        class="d-flex flex-column align-items-center justify-content-center file-download"
+        href="/download/Bachelorarbeit-Ben-Buchenau.pdf"
+      >
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
+        </svg>
+        <button
+          class="btn btn-primary"
+          type="button"
+        >
+          PDF Herunterladen
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+<footer class="footer container-fluid py-5">
+  <div class="row py-5">
+    <div class="col-12 col-md-6 px-5 text-white text-center text-md-right">
+      <h4>Kontakt</h4>
+      <p>
+        Tel:
+        <a
+          class="text-secondary"
+          href="tel:+491772724021"
+        >
+          +49 177 27 24 021
+        </a>
+        <br>
+        Mail:
+        <a
+          class="text-secondary"
+          href="mailto:buchenau.ben@web.de"
+        >
+          buchenau.ben@web.de
+        </a>
+      </p>
+    </div>
+    <div class="col-12 col-md-6 px-5 text-white text-center text-md-left mt-5 mt-md-0">
+      <h4>Impressum</h4>
+      <p>
+        Ben Buchenau<br>
+        Drosselweg 22<br>
+        50735 Köln
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
